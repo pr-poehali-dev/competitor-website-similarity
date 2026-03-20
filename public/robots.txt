@@ -12,3 +12,16 @@ Allow: /
 
 User-agent: *
 Allow: /
+Allow: /catalog
+Allow: /city/
+Allow: /delivery
+Allow: /about
+Allow: /contacts
+Allow: /calculator
+Allow: /blog
+Allow: /reviews
+
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://abraziv-opt.ru/sitemap.xml
