@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 214 25% 8%;
-    --foreground: 210 20% 92%;
+    --background: 214 20% 14%;
+    --foreground: 210 20% 93%;
 
-    --card: 214 22% 11%;
-    --card-foreground: 210 20% 92%;
+    --card: 214 18% 18%;
+    --card-foreground: 210 20% 93%;
 
-    --popover: 214 22% 11%;
-    --popover-foreground: 210 20% 92%;
+    --popover: 214 18% 18%;
+    --popover-foreground: 210 20% 93%;
 
     --primary: 199 80% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214 18% 16%;
-    --secondary-foreground: 210 20% 92%;
+    --secondary: 214 15% 23%;
+    --secondary-foreground: 210 20% 93%;
 
-    --muted: 214 18% 16%;
-    --muted-foreground: 215 15% 55%;
+    --muted: 214 15% 23%;
+    --muted-foreground: 215 15% 60%;
 
     --accent: 38 90% 50%;
     --accent-foreground: 214 25% 8%;
@@ -30,28 +30,28 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 18% 20%;
-    --input: 214 18% 20%;
+    --border: 214 15% 26%;
+    --input: 214 15% 26%;
     --ring: 199 80% 42%;
 
     --radius: 0.25rem;
 
-    --sidebar-background: 214 25% 8%;
-    --sidebar-foreground: 210 20% 92%;
+    --sidebar-background: 214 20% 14%;
+    --sidebar-foreground: 210 20% 93%;
     --sidebar-primary: 199 80% 42%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 214 18% 16%;
-    --sidebar-accent-foreground: 210 20% 92%;
-    --sidebar-border: 214 18% 20%;
+    --sidebar-accent: 214 15% 23%;
+    --sidebar-accent-foreground: 210 20% 93%;
+    --sidebar-border: 214 15% 26%;
     --sidebar-ring: 199 80% 42%;
 
     /* Custom brand vars */
-    --brand-navy: #0d1520;
-    --brand-steel: #1a2535;
+    --brand-navy: #1b2738;
+    --brand-steel: #253347;
     --brand-blue: #1a8fb5;
     --brand-gold: #e8940a;
     --brand-light: #e8edf2;
-    --brand-muted: #6b7a8d;
+    --brand-muted: #7d8fa3;
   }
 }
 
