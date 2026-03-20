@@ -262,7 +262,7 @@ export default function HomePage({ currentCity }: HomePageProps) {
             <div className="text-xs font-oswald tracking-widest text-blue-400 mb-3 uppercase">Региональная сеть</div>
             <h2 className="font-oswald text-3xl md:text-4xl text-white">СКЛАДЫ В ВАШЕМ ГОРОДЕ</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
             {cities.map(c => (
               <Link
                 key={c.id}

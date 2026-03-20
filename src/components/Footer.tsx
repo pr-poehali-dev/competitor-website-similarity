@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
+import { cities } from "@/data/cities";
 
 export default function Footer() {
   return (
@@ -47,12 +48,15 @@ export default function Footer() {
             {/* Cities */}
             <div>
               <h4 className="font-oswald text-white font-medium mb-4 text-sm tracking-wider uppercase">Города</h4>
-              <ul className="space-y-2 text-sm" style={{ color: "var(--brand-muted)" }}>
-                <li><Link to="/city/moskva" className="hover:text-white transition-colors">Москва</Link></li>
-                <li><Link to="/city/spb" className="hover:text-white transition-colors">Санкт-Петербург</Link></li>
-                <li><Link to="/city/ekaterinburg" className="hover:text-white transition-colors">Екатеринбург</Link></li>
-                <li><Link to="/city/novosibirsk" className="hover:text-white transition-colors">Новосибирск</Link></li>
-                <li><Link to="/city/kazan" className="hover:text-white transition-colors">Казань</Link></li>
+              <ul className="space-y-1.5 text-sm" style={{ color: "var(--brand-muted)" }}>
+                {cities.slice(0, 10).map(c => (
+                  <li key={c.id}><Link to={`/city/${c.slug}`} className="hover:text-white transition-colors">{c.name}</Link></li>
+                ))}
+                <li className="pt-1">
+                  <Link to="/city/ekaterinburg" className="hover:text-white transition-colors" style={{ color: "hsl(var(--primary))" }}>
+                    Все {cities.length} городов →
+                  </Link>
+                </li>
               </ul>
             </div>
 

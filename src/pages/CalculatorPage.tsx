@@ -12,15 +12,8 @@ export default function CalculatorPage() {
   const city = cities.find(c => c.slug === citySlug) || cities[0];
   const product = products.find(p => p.id === productId) || products[0];
 
-  const distanceMultiplier: Record<string, number> = {
-    moskva: 1.0,
-    spb: 1.05,
-    ekaterinburg: 1.15,
-    novosibirsk: 1.21,
-    kazan: 1.10,
-  };
-
-  const mult = distanceMultiplier[citySlug] || 1.0;
+  const basePricePerTon = cities[0].pricePerTon;
+  const mult = city.pricePerTon / basePricePerTon;
   const productPrice = Math.round(product.basePrice * mult);
   const subtotal = productPrice * weight;
   const deliveryPrice = weight >= 5 ? 0 : Math.round(3500 * mult);
