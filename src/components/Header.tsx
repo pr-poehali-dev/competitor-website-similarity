@@ -38,7 +38,7 @@ export default function Header({ currentCity, onCityChange }: HeaderProps) {
             </span>
             <span className="hidden md:flex items-center gap-1.5">
               <Icon name="Mail" size={13} />
-              info@abraziv-opt.ru
+              sales@tareksa.ru
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -79,8 +79,8 @@ export default function Header({ currentCity, onCityChange }: HeaderProps) {
               <Icon name="Layers" size={20} className="text-white" />
             </div>
             <div>
-              <div className="font-oswald font-700 text-white text-lg tracking-wider leading-none">АБРАЗИВ ОПТ</div>
-              <div className="text-xs leading-none mt-0.5" style={{ color: "var(--brand-muted)" }}>Промышленные материалы</div>
+              <div className="font-oswald font-700 text-white text-lg tracking-wider leading-none">НПФ ТАРЕКСА</div>
+              <div className="text-xs leading-none mt-0.5" style={{ color: "var(--brand-muted)" }}>Кварцевые материалы оптом</div>
             </div>
           </Link>
 

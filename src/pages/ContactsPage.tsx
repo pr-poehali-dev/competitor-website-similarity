@@ -163,7 +163,7 @@ export default function ContactsPage({ currentCity }: ContactsPageProps) {
                   <Icon name="Mail" size={16} className="mt-0.5 shrink-0" style={{ color: "hsl(var(--primary))" }} />
                   <div>
                     <div className="text-xs mb-0.5 uppercase tracking-wider" style={{ color: "var(--brand-muted)" }}>Email</div>
-                    <a href="mailto:info@abraziv-opt.ru" className="text-white hover:text-blue-400 transition-colors">info@abraziv-opt.ru</a>
+                    <a href="mailto:sales@tareksa.ru" className="text-white hover:text-blue-400 transition-colors">sales@tareksa.ru</a>
                   </div>
                 </div>
               </div>

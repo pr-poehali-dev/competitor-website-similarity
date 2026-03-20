@@ -15,12 +15,12 @@ export default function Footer() {
                   <Icon name="Layers" size={20} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-oswald font-bold text-white tracking-wider">АБРАЗИВ ОПТ</div>
-                  <div className="text-xs" style={{ color: "var(--brand-muted)" }}>Промышленные материалы</div>
+                  <div className="font-oswald font-bold text-white tracking-wider">НПФ ТАРЕКСА</div>
+                  <div className="text-xs" style={{ color: "var(--brand-muted)" }}>Кварцевые материалы оптом</div>
                 </div>
               </div>
               <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--brand-muted)" }}>
-                Производство и поставка абразивных порошков, кварцевого песка и цеолитов оптом по всей России с 2008 года.
+                Поставка кварцевых песков, гидроантрацита Aqualat, цеолита, гравия, щебня и активированного угля оптом по всей России.
               </p>
               <div className="flex items-center gap-3">
                 <a href="#" className="w-8 h-8 rounded flex items-center justify-center transition-colors hover:bg-white/10" style={{ background: "rgba(255,255,255,0.06)" }}>
@@ -37,11 +37,12 @@ export default function Footer() {
               <h4 className="font-oswald text-white font-medium mb-4 text-sm tracking-wider uppercase">Каталог</h4>
               <ul className="space-y-2 text-sm" style={{ color: "var(--brand-muted)" }}>
                 <li><Link to="/catalog" className="hover:text-white transition-colors">Кварцевый песок</Link></li>
-                <li><Link to="/catalog" className="hover:text-white transition-colors">Электрокорунд</Link></li>
-                <li><Link to="/catalog" className="hover:text-white transition-colors">Карбид кремния</Link></li>
+                <li><Link to="/catalog" className="hover:text-white transition-colors">Гидроантрацит Aqualat</Link></li>
+                <li><Link to="/catalog" className="hover:text-white transition-colors">Кварц дроблёный</Link></li>
+                <li><Link to="/catalog" className="hover:text-white transition-colors">Гравий кварцевый</Link></li>
+                <li><Link to="/catalog" className="hover:text-white transition-colors">Мраморная крошка</Link></li>
                 <li><Link to="/catalog" className="hover:text-white transition-colors">Цеолит природный</Link></li>
-                <li><Link to="/catalog" className="hover:text-white transition-colors">Стеклянные шарики</Link></li>
-                <li><Link to="/catalog" className="hover:text-white transition-colors">Купершлак</Link></li>
+                <li><Link to="/catalog" className="hover:text-white transition-colors">Активированный уголь</Link></li>
               </ul>
             </div>
 
@@ -67,17 +68,16 @@ export default function Footer() {
                 <li className="flex items-start gap-2">
                   <Icon name="Phone" size={15} className="mt-0.5 shrink-0" style={{ color: "hsl(var(--primary))" }} />
                   <div>
-                    <a href="tel:+74951234567" className="hover:text-white transition-colors block">+7 (495) 123-45-67</a>
-                    <span className="text-xs">8 (800) 775-00-00 (бесплатно)</span>
+                    <a href="tel:+79267947070" className="hover:text-white transition-colors block">+7 (926) 794-70-70</a>
                   </div>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Mail" size={15} className="shrink-0" style={{ color: "hsl(var(--primary))" }} />
-                  <a href="mailto:info@abraziv-opt.ru" className="hover:text-white transition-colors">info@abraziv-opt.ru</a>
+                  <a href="mailto:sales@tareksa.ru" className="hover:text-white transition-colors">sales@tareksa.ru</a>
                 </li>
                 <li className="flex items-start gap-2">
                   <Icon name="MapPin" size={15} className="mt-0.5 shrink-0" style={{ color: "hsl(var(--primary))" }} />
-                  <span>105187, Москва, Промышленная зона Южный порт, ул. Трофимова, 14</span>
+                  <span>Москва, Россия</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Clock" size={15} className="shrink-0" style={{ color: "hsl(var(--primary))" }} />
@@ -91,7 +91,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs" style={{ color: "var(--brand-muted)" }}>
-        <span>© 2008–2026 ООО «Абразив Опт». Все права защищены.</span>
+        <span>© НПФ ТАРЕКСА. Все права защищены.</span>
         <div className="flex items-center gap-4">
           <Link to="/privacy" className="hover:text-white transition-colors">Политика конфиденциальности</Link>
           <Link to="/sitemap" className="hover:text-white transition-colors">Карта сайта</Link>

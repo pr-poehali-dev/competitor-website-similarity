@@ -15,15 +15,17 @@ export default function CatalogPage({ currentCity }: CatalogPageProps) {
 
   const categories = [
     { id: "all", label: "Все материалы" },
-    { id: "abrasive", label: "Абразивы" },
-    { id: "zeolite", label: "Цеолиты" },
+    { id: "quartz", label: "Кварц и песок" },
+    { id: "filtration", label: "Фильтрация и сорбция" },
+    { id: "stone", label: "Камень и крошка" },
   ];
 
   const filtered = products
     .filter(p => category === "all" || p.category === category)
     .sort((a, b) => sortBy === "price" ? a.basePrice - b.basePrice : a.name.localeCompare(b.name));
 
-  const mult = { moskva: 1.0, spb: 1.05, ekaterinburg: 1.15, novosibirsk: 1.21, kazan: 1.10 }[currentCity] || 1.0;
+  const basePricePerTon = cities[0].pricePerTon;
+  const mult = city.pricePerTon / basePricePerTon;
 
   return (
     <section className="min-h-screen py-16 bg-brand-pattern">

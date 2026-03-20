@@ -29,8 +29,9 @@ export default function HomePage({ currentCity }: HomePageProps) {
 
   const categories = [
     { id: "all", label: "Все товары" },
-    { id: "abrasive", label: "Абразивы" },
-    { id: "zeolite", label: "Цеолиты" },
+    { id: "quartz", label: "Кварц и песок" },
+    { id: "filtration", label: "Фильтрация" },
+    { id: "stone", label: "Камень" },
   ];
 
   const filtered = selectedCategory === "all"
@@ -46,21 +47,19 @@ export default function HomePage({ currentCity }: HomePageProps) {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Абразив Опт",
-            "url": "https://abraziv-opt.ru",
-            "logo": "https://abraziv-opt.ru/logo.png",
+            "name": "НПФ ТАРЕКСА",
+            "url": "https://tareksa.ru",
+            "logo": "https://tareksa.ru/logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+7-800-775-00-00",
+              "telephone": "+7-926-794-70-70",
+              "email": "sales@tareksa.ru",
               "contactType": "sales",
               "availableLanguage": "Russian"
             },
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "ул. Трофимова, 14",
               "addressLocality": "Москва",
-              "addressRegion": "Московская область",
-              "postalCode": "105187",
               "addressCountry": "RU"
             }
           })
@@ -98,14 +97,14 @@ export default function HomePage({ currentCity }: HomePageProps) {
             </div>
 
             <h1 className="font-oswald text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6 animate-fade-in stagger-2">
-              АБРАЗИВНЫЕ<br />
-              <span style={{ color: "hsl(var(--primary))" }}>ПОРОШКИ</span><br />
-              ОПТОМ
+              КВАРЦЕВЫЙ<br />
+              <span style={{ color: "hsl(var(--primary))" }}>ПЕСОК</span> И<br />
+              СОРБЕНТЫ
             </h1>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-xl animate-fade-in stagger-3">
-              Производство и поставка кварцевого песка, электрокорунда, карбида кремния и цеолитов.
-              Склад в {city.name}. Цена от <strong className="text-white">{city.pricePerTon.toLocaleString()} руб./т</strong>
+              НПФ ТАРЕКСА — поставки кварцевых песков, гидроантрацита Aqualat, цеолита, мраморной крошки и активированного угля.
+              Доставка в {city.name} от <strong className="text-white">{city.pricePerTon.toLocaleString()} руб./т</strong>
             </p>
 
             <div className="flex flex-wrap gap-4 animate-fade-in stagger-4">
